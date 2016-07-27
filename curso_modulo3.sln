@@ -3,15 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteDataReader", "SqliteDataReader\SqliteDataReader.csproj", "{7CBA2759-E288-4842-AF85-92FE32A59D88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpgsqlDataReader", "NpgsqlDataReader\NpgsqlDataReader.csproj", "{662AD7A8-707B-426F-9F75-E734534172DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteDataAdapter", "SqliteDataAdapter\SqliteDataAdapter.csproj", "{770B9F19-0002-49E0-8297-EA1E8CCBFD87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpgsqlDataAdapter", "NpgsqlDataAdapter\NpgsqlDataAdapter.csproj", "{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteCommand", "SqliteCommand\SqliteCommand.csproj", "{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Debug|x86.ActiveCfg = Debug|x86
+		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Debug|x86.Build.0 = Debug|x86
+		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Release|x86.ActiveCfg = Release|x86
+		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Release|x86.Build.0 = Release|x86
+		{662AD7A8-707B-426F-9F75-E734534172DE}.Debug|x86.ActiveCfg = Debug|x86
+		{662AD7A8-707B-426F-9F75-E734534172DE}.Debug|x86.Build.0 = Debug|x86
+		{662AD7A8-707B-426F-9F75-E734534172DE}.Release|x86.ActiveCfg = Release|x86
+		{662AD7A8-707B-426F-9F75-E734534172DE}.Release|x86.Build.0 = Release|x86
+		{770B9F19-0002-49E0-8297-EA1E8CCBFD87}.Debug|x86.ActiveCfg = Debug|x86
+		{770B9F19-0002-49E0-8297-EA1E8CCBFD87}.Debug|x86.Build.0 = Debug|x86
+		{770B9F19-0002-49E0-8297-EA1E8CCBFD87}.Release|x86.ActiveCfg = Release|x86
+		{770B9F19-0002-49E0-8297-EA1E8CCBFD87}.Release|x86.Build.0 = Release|x86
 		{7CBA2759-E288-4842-AF85-92FE32A59D88}.Debug|x86.ActiveCfg = Debug|x86
 		{7CBA2759-E288-4842-AF85-92FE32A59D88}.Debug|x86.Build.0 = Debug|x86
 		{7CBA2759-E288-4842-AF85-92FE32A59D88}.Release|x86.ActiveCfg = Release|x86
 		{7CBA2759-E288-4842-AF85-92FE32A59D88}.Release|x86.Build.0 = Release|x86
+		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Debug|x86.ActiveCfg = Debug|x86
+		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Debug|x86.Build.0 = Debug|x86
+		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Release|x86.ActiveCfg = Release|x86
+		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

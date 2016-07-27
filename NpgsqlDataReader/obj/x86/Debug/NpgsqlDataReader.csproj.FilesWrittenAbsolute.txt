@@ -1,0 +1,6 @@
+/home/william/Documents/Projects/curso_modulo3/NpgsqlDataReader/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/william/Documents/Projects/curso_modulo3/NpgsqlDataReader/bin/Debug/NpgsqlDataReader.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/NpgsqlDataReader/bin/Debug/NpgsqlDataReader.exe
+/home/william/Documents/Projects/curso_modulo3/NpgsqlDataReader/obj/x86/Debug/NpgsqlDataReader.exe
+/home/william/Documents/Projects/curso_modulo3/NpgsqlDataReader/obj/x86/Debug/NpgsqlDataReader.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/NpgsqlDataReader/bin/Debug/Npgsql.dll

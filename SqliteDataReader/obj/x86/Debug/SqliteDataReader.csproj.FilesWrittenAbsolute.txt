@@ -1,0 +1,6 @@
+/home/william/Documents/Projects/curso_modulo3/SqliteDataReader/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/william/Documents/Projects/curso_modulo3/SqliteDataReader/bin/Debug/SqliteDataReader.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/SqliteDataReader/bin/Debug/SqliteDataReader.exe
+/home/william/Documents/Projects/curso_modulo3/SqliteDataReader/obj/x86/Debug/SqliteDataReader.exe
+/home/william/Documents/Projects/curso_modulo3/SqliteDataReader/obj/x86/Debug/SqliteDataReader.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/SqliteDataReader/bin/Debug/Mono.Data.Sqlite.dll
