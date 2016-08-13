@@ -1,6 +1,13 @@
-﻿<Properties StartupItem="SqliteDataAdapter/SqliteDataAdapter.csproj">
+﻿<Properties StartupItem="SpartacusExemplo02/SpartacusExemplo02.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpartacusExemplo02/Program.cs">
+    <Files>
+      <File FileName="SqliteDataReader/Program.cs" Line="42" Column="22" />
+      <File FileName="SpartacusExemplo01/Program.cs" Line="18" Column="54" />
+      <File FileName="NpgsqlDataReader/Program.cs" Line="18" Column="16" />
+      <File FileName="SpartacusExemplo02/Program.cs" Line="31" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

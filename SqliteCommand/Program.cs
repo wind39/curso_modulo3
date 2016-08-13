@@ -24,8 +24,8 @@ namespace SqliteCommand
 
                 // 3) instanciando Command
                 v_cmd = new Mono.Data.Sqlite.SqliteCommand(
-                    "insert into estados values (60, 'WI', 'William Ivanski')",
-                    //"delete from estados where codigo = 60",
+                    //"insert into estados values (60, 'WI', 'William Ivanski')",
+                    "delete from estados where codigo = 60",
                     v_con
                 );
 

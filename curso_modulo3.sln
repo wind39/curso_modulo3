@@ -11,16 +11,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpgsqlDataAdapter", "Npgsql
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteCommand", "SqliteCommand\SqliteCommand.csproj", "{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpartacusExemplo01", "SpartacusExemplo01\SpartacusExemplo01.csproj", "{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpartacusExemplo02", "SpartacusExemplo02\SpartacusExemplo02.csproj", "{5152C8C9-8E3E-46F9-95AF-E4603306129E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Debug|x86.ActiveCfg = Debug|x86
+		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Debug|x86.Build.0 = Debug|x86
+		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Release|x86.ActiveCfg = Release|x86
+		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Release|x86.Build.0 = Release|x86
 		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Debug|x86.ActiveCfg = Debug|x86
 		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Debug|x86.Build.0 = Debug|x86
 		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Release|x86.ActiveCfg = Release|x86
 		{25FE5C85-1AAE-4F35-ADBC-D066CD2305BE}.Release|x86.Build.0 = Release|x86
+		{5152C8C9-8E3E-46F9-95AF-E4603306129E}.Debug|x86.ActiveCfg = Debug|x86
+		{5152C8C9-8E3E-46F9-95AF-E4603306129E}.Debug|x86.Build.0 = Debug|x86
+		{5152C8C9-8E3E-46F9-95AF-E4603306129E}.Release|x86.ActiveCfg = Release|x86
+		{5152C8C9-8E3E-46F9-95AF-E4603306129E}.Release|x86.Build.0 = Release|x86
 		{662AD7A8-707B-426F-9F75-E734534172DE}.Debug|x86.ActiveCfg = Debug|x86
 		{662AD7A8-707B-426F-9F75-E734534172DE}.Debug|x86.Build.0 = Debug|x86
 		{662AD7A8-707B-426F-9F75-E734534172DE}.Release|x86.ActiveCfg = Release|x86

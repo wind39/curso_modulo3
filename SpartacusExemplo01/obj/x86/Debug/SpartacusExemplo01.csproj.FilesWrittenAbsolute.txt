@@ -1,0 +1,6 @@
+/home/william/Documents/Projects/curso_modulo3/SpartacusExemplo01/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/william/Documents/Projects/curso_modulo3/SpartacusExemplo01/bin/Debug/SpartacusExemplo01.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/SpartacusExemplo01/bin/Debug/SpartacusExemplo01.exe
+/home/william/Documents/Projects/curso_modulo3/SpartacusExemplo01/obj/x86/Debug/SpartacusExemplo01.exe
+/home/william/Documents/Projects/curso_modulo3/SpartacusExemplo01/obj/x86/Debug/SpartacusExemplo01.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/SpartacusExemplo01/bin/Debug/Spartacus.dll
