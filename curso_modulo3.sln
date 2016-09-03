@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpartacusExemplo01", "Spart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpartacusExemplo02", "SpartacusExemplo02\SpartacusExemplo02.csproj", "{5152C8C9-8E3E-46F9-95AF-E4603306129E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financas", "Financas\Financas.csproj", "{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -49,5 +51,9 @@ Global
 		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Debug|x86.Build.0 = Debug|x86
 		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Release|x86.ActiveCfg = Release|x86
 		{94EF19CC-3AB8-44A8-ABB8-63D895B2100C}.Release|x86.Build.0 = Release|x86
+		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Debug|x86.ActiveCfg = Debug|x86
+		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Debug|x86.Build.0 = Debug|x86
+		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Release|x86.ActiveCfg = Release|x86
+		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

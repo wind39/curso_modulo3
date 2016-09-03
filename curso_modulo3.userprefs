@@ -1,11 +1,12 @@
-﻿<Properties StartupItem="SpartacusExemplo02/SpartacusExemplo02.csproj">
+﻿<Properties StartupItem="Financas/Financas.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SpartacusExemplo02/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Financas/JanelaPrincipal.cs">
     <Files>
-      <File FileName="SqliteDataReader/Program.cs" Line="42" Column="22" />
-      <File FileName="SpartacusExemplo01/Program.cs" Line="18" Column="54" />
-      <File FileName="NpgsqlDataReader/Program.cs" Line="18" Column="16" />
-      <File FileName="SpartacusExemplo02/Program.cs" Line="31" Column="41" />
+      <File FileName="Financas/Program.cs" Line="13" Column="55" />
+      <File FileName="Financas/JanelaPrincipal.cs" Line="65" Column="40" />
+      <File FileName="Financas/JanelaDebito.cs" Line="10" Column="16" />
+      <File FileName="Financas/JanelaCredito.cs" Line="10" Column="52" />
+      <File FileName="Financas/JanelaAgente.cs" Line="67" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
