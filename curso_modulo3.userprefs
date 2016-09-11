@@ -2,11 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Financas/JanelaPrincipal.cs">
     <Files>
-      <File FileName="Financas/Program.cs" Line="13" Column="55" />
-      <File FileName="Financas/JanelaPrincipal.cs" Line="65" Column="40" />
-      <File FileName="Financas/JanelaDebito.cs" Line="10" Column="16" />
-      <File FileName="Financas/JanelaCredito.cs" Line="10" Column="52" />
-      <File FileName="Financas/JanelaAgente.cs" Line="67" Column="13" />
+      <File FileName="Financas/Program.cs" Line="14" Column="50" />
+      <File FileName="Financas/JanelaPrincipal.cs" Line="94" Column="16" />
+      <File FileName="Financas/JanelaCredito.cs" Line="84" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

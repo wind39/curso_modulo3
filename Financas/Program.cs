@@ -11,6 +11,7 @@ namespace Financas
             JanelaPrincipal v_janelaprincipal;
 
             v_database = new Spartacus.Database.Sqlite("../../../databases/financas.db");
+            v_database.SetExecuteSecurity(false);
 
             v_janelaprincipal = new JanelaPrincipal(v_database);
 

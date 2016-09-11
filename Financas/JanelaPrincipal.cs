@@ -14,6 +14,7 @@ namespace Financas
         JanelaDebito v_janeladebito;
         JanelaCredito v_janelacredito;
 
+        Spartacus.Database.Command v_cmd;
 
         public JanelaPrincipal(Spartacus.Database.Generic p_database) : base("Finanças Pessoais", 800, 600)
         {
@@ -52,6 +53,18 @@ namespace Financas
             this.v_janelaagentes = new JanelaAgentes(this.v_database, this);
             this.v_janeladebito = new JanelaDebito(this.v_database, this);
             this.v_janelacredito = new JanelaCredito(this.v_database, this);
+
+            this.v_cmd = new Spartacus.Database.Command();
+            this.v_cmd.v_text = "insert into movimentos (idagente, data, debito, credito, saldo, descricao) values (#IDAGENTE#, #DATA#, #DEBITO#, #CREDITO#, #SALDO#, #DESCRICAO#)";
+            this.v_cmd.AddParameter("IDAGENTE", Spartacus.Database.Type.INTEGER);
+            this.v_cmd.AddParameter("DATA", Spartacus.Database.Type.INTEGER);
+            this.v_cmd.AddParameter("DEBITO", Spartacus.Database.Type.REAL);
+            this.v_cmd.SetLocale("DEBITO", Spartacus.Database.Locale.EUROPEAN);
+            this.v_cmd.AddParameter("CREDITO", Spartacus.Database.Type.REAL);
+            this.v_cmd.SetLocale("CREDITO", Spartacus.Database.Locale.EUROPEAN);
+            this.v_cmd.AddParameter("SALDO", Spartacus.Database.Type.REAL);
+            this.v_cmd.SetLocale("SALDO", Spartacus.Database.Locale.EUROPEAN);
+            this.v_cmd.AddParameter("DESCRICAO", Spartacus.Database.Type.STRING);
         }
 
         public void MenuAgentes(object sender, EventArgs e)
@@ -67,18 +80,59 @@ namespace Financas
 
         public void ClickCredito(object sender, EventArgs e)
         {
-            //this.v_janelacredito.v_agente.Refresh();
+            this.v_janelacredito.v_agente.Refresh();
             this.v_janelacredito.Show();
         }
 
         public void ClickEstorno(object sender, EventArgs e)
         {
-            Spartacus.Forms.Messagebox.Show("Ainda não implementado.", "Erro!", Spartacus.Forms.Messagebox.Icon.HAND);
+            System.Data.DataRow v_row;
+            double v_saldo, v_debito, v_credito, v_novosaldo;
+            string v_tmp;
+            int v_idagente;
+
+            try
+            {
+                v_row = this.v_grid.CurrentRow();
+
+                v_tmp = this.v_database.ExecuteScalar(
+                    "select m.saldo        " +
+                    "from movimentos m     " +
+                    "where m.id = (        " +
+                    "    select max(n.id)  " +
+                    "    from movimentos n " +
+                    ")                     "
+                );
+
+                if (!double.TryParse(v_tmp, out v_saldo))
+                    v_saldo = 0.0;
+
+                v_debito = double.Parse(v_row["credito"].ToString());
+                v_credito = double.Parse(v_row["debito"].ToString());
+                v_novosaldo = v_saldo - v_debito + v_credito;
+
+                v_idagente = int.Parse(this.v_database.ExecuteScalar("select idagente from movimentos where id = " + v_row["id"].ToString()));
+
+                this.v_cmd.SetValue("IDAGENTE", v_idagente.ToString());
+                this.v_cmd.SetValue("DATA", DateTime.Now.ToString("yyyyMMdd"));
+                this.v_cmd.SetValue("DEBITO", v_debito.ToString());
+                this.v_cmd.SetValue("CREDITO", v_credito.ToString());
+                this.v_cmd.SetValue("SALDO", v_novosaldo.ToString());
+                this.v_cmd.SetValue("DESCRICAO", "[ESTORNO] " + v_row["descricao"].ToString(), false);
+
+                this.v_database.Execute(this.v_cmd.GetUpdatedText());
+
+                this.v_grid.Refresh();
+            }
+            catch (Exception exc)
+            {
+                Spartacus.Forms.Messagebox.Show(exc.Message, "Exception", Spartacus.Forms.Messagebox.Icon.ASTERISK);
+            }
         }
 
         public void ClickAtualizar(object sender, EventArgs e)
         {
-            Spartacus.Forms.Messagebox.Show("Ainda não implementado.", "Erro!", Spartacus.Forms.Messagebox.Icon.HAND);
+            this.v_grid.Refresh();
         }
     }
 }
