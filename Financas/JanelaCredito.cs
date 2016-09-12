@@ -31,7 +31,7 @@ namespace Financas
             this.v_valor = new Spartacus.Forms.Textbox(this, "Valor");
             this.Add(this.v_valor);
 
-            this.v_descricao = new Spartacus.Forms.Memobox(this, "Descrição", this.v_width, 150);
+            this.v_descricao = new Spartacus.Forms.Memobox(this, "Descrição", 150);
             this.Add(this.v_descricao);
 
             this.v_buttons = new Spartacus.Forms.Buttons(this);
