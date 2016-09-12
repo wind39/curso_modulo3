@@ -20,11 +20,18 @@ namespace Financas
         {
             this.v_database = p_database;
 
-            Spartacus.Forms.Menugroup v_group;
+            Spartacus.Forms.Menugroup v_group, v_group2;
             this.v_menu = new Spartacus.Forms.Menu(this);
             v_group = this.v_menu.AddGroup("Cadastro");
             this.v_menu.AddItem(v_group, "Agentes", this.MenuAgentes);
             this.Add(this.v_menu);
+            v_group = this.v_menu.AddGroup("Relatórios");
+            v_group2 = this.v_menu.AddGroup(v_group, "Listagem de Agentes");
+            this.v_menu.AddItem(v_group2, "Excel", this.MenuAgentesExcel);
+            this.v_menu.AddItem(v_group2, "PDF", this.MenuAgentesPDF);
+            v_group2 = this.v_menu.AddGroup(v_group, "Listagem de Movimentação");
+            this.v_menu.AddItem(v_group2, "Excel", this.MenuMovimentacaoExcel);
+            this.v_menu.AddItem(v_group2, "PDF", this.MenuMovimentacaoPDF);
 
             this.v_grid = new Spartacus.Forms.Grid(this, 480);
             this.v_grid.Populate(
@@ -133,6 +140,98 @@ namespace Financas
         public void ClickAtualizar(object sender, EventArgs e)
         {
             this.v_grid.Refresh();
+        }
+
+        public void MenuAgentesExcel(object sender, EventArgs e)
+        {
+            Spartacus.Utils.Excel v_excel;
+            System.Data.DataTable v_table;
+
+            v_table = this.v_database.Query(
+                "select a.id,      " +
+                "       a.nome,    " +
+                "       a.telefone " +
+                "from agentes a    " +
+                "order by a.id     ", "AGENTES"
+            );
+
+            v_excel = new Spartacus.Utils.Excel();
+            v_excel.v_set.Tables.Add(v_table);
+            v_excel.Export("agentes.xlsx");
+
+            Spartacus.Forms.Messagebox.Show("Relatório salvo com sucesso.", "OK", Spartacus.Forms.Messagebox.Icon.INFORMATION);
+        }
+
+        public void MenuAgentesPDF(object sender, EventArgs e)
+        {
+            Spartacus.Reporting.Report v_report;
+            System.Data.DataTable v_table;
+
+            v_table = this.v_database.Query(
+                "select a.id,      " +
+                "       a.nome,    " +
+                "       a.telefone " +
+                "from agentes a    " +
+                "order by a.id     ", "AGENTES"
+            );
+
+            v_report = new Spartacus.Reporting.Report(v_table);
+            v_report.Execute();
+            v_report.Save("agentes.pdf");
+
+            Spartacus.Forms.Messagebox.Show("Relatório salvo com sucesso.", "OK", Spartacus.Forms.Messagebox.Icon.INFORMATION);
+        }
+
+        public void MenuMovimentacaoExcel(object sender, EventArgs e)
+        {
+            Spartacus.Utils.Excel v_excel;
+            System.Data.DataTable v_table;
+
+            v_table = this.v_database.Query(
+                "select m.id,         " +
+                "       m.data,       " +
+                "       a.nome,       " +
+                "       m.descricao,  " +
+                "       m.debito,     " +
+                "       m.credito,    " +
+                "       m.saldo       " +
+                "from movimentos m    " +
+                "inner join agentes a " +
+                "on a.id = m.idagente " +
+                "order by m.id desc   ", "MOVIMENTACAO"
+            );
+
+            v_excel = new Spartacus.Utils.Excel();
+            v_excel.v_set.Tables.Add(v_table);
+            v_excel.Export("movimentacao.xlsx");
+
+            Spartacus.Forms.Messagebox.Show("Relatório salvo com sucesso.", "OK", Spartacus.Forms.Messagebox.Icon.INFORMATION);
+        }
+
+        public void MenuMovimentacaoPDF(object sender, EventArgs e)
+        {
+            Spartacus.Reporting.Report v_report;
+            System.Data.DataTable v_table;
+
+            v_table = this.v_database.Query(
+                "select m.id,         " +
+                "       m.data,       " +
+                "       a.nome,       " +
+                "       m.descricao,  " +
+                "       m.debito,     " +
+                "       m.credito,    " +
+                "       m.saldo       " +
+                "from movimentos m    " +
+                "inner join agentes a " +
+                "on a.id = m.idagente " +
+                "order by m.id desc   ", "MOVIMENTACAO"
+            );
+
+            v_report = new Spartacus.Reporting.Report(v_table);
+            v_report.Execute();
+            v_report.Save("movimentacao.pdf");
+
+            Spartacus.Forms.Messagebox.Show("Relatório salvo com sucesso.", "OK", Spartacus.Forms.Messagebox.Icon.INFORMATION);
         }
     }
 }
