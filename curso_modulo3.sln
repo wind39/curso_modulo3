@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financas", "Financas\Financ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lista4Exercicio06", "Lista4Exercicio06\Lista4Exercicio06.csproj", "{B864C55A-A292-4B13-9A76-0C38C71543B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTamanhoBloco", "TesteTamanhoBloco\TesteTamanhoBloco.csproj", "{E9C70AC9-C611-435E-82AA-A950923B072B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -57,6 +59,10 @@ Global
 		{B864C55A-A292-4B13-9A76-0C38C71543B1}.Debug|x86.Build.0 = Debug|x86
 		{B864C55A-A292-4B13-9A76-0C38C71543B1}.Release|x86.ActiveCfg = Release|x86
 		{B864C55A-A292-4B13-9A76-0C38C71543B1}.Release|x86.Build.0 = Release|x86
+		{E9C70AC9-C611-435E-82AA-A950923B072B}.Debug|x86.ActiveCfg = Debug|x86
+		{E9C70AC9-C611-435E-82AA-A950923B072B}.Debug|x86.Build.0 = Debug|x86
+		{E9C70AC9-C611-435E-82AA-A950923B072B}.Release|x86.ActiveCfg = Release|x86
+		{E9C70AC9-C611-435E-82AA-A950923B072B}.Release|x86.Build.0 = Release|x86
 		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Debug|x86.ActiveCfg = Debug|x86
 		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Debug|x86.Build.0 = Debug|x86
 		{E9EE381E-6E7D-451E-83AF-D3B93DEB6749}.Release|x86.ActiveCfg = Release|x86

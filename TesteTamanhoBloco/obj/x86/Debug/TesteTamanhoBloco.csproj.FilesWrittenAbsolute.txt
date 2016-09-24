@@ -1,0 +1,6 @@
+/home/william/Documents/Projects/curso_modulo3/TesteTamanhoBloco/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/william/Documents/Projects/curso_modulo3/TesteTamanhoBloco/bin/Debug/TesteTamanhoBloco.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/TesteTamanhoBloco/bin/Debug/TesteTamanhoBloco.exe
+/home/william/Documents/Projects/curso_modulo3/TesteTamanhoBloco/obj/x86/Debug/TesteTamanhoBloco.exe
+/home/william/Documents/Projects/curso_modulo3/TesteTamanhoBloco/obj/x86/Debug/TesteTamanhoBloco.exe.mdb
+/home/william/Documents/Projects/curso_modulo3/TesteTamanhoBloco/bin/Debug/Spartacus.dll
