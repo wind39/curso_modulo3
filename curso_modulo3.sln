@@ -21,12 +21,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lista4Exercicio06", "Lista4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTamanhoBloco", "TesteTamanhoBloco\TesteTamanhoBloco.csproj", "{E9C70AC9-C611-435E-82AA-A950923B072B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partidas", "Partidas\Partidas.csproj", "{00F227BF-34CD-4F2C-AB55-C98C846A1B53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00F227BF-34CD-4F2C-AB55-C98C846A1B53}.Debug|x86.ActiveCfg = Debug|x86
+		{00F227BF-34CD-4F2C-AB55-C98C846A1B53}.Debug|x86.Build.0 = Debug|x86
+		{00F227BF-34CD-4F2C-AB55-C98C846A1B53}.Release|x86.ActiveCfg = Release|x86
+		{00F227BF-34CD-4F2C-AB55-C98C846A1B53}.Release|x86.Build.0 = Release|x86
 		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Debug|x86.ActiveCfg = Debug|x86
 		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Debug|x86.Build.0 = Debug|x86
 		{1438B7D5-90EE-45FF-8BD3-7D14C02B64FB}.Release|x86.ActiveCfg = Release|x86

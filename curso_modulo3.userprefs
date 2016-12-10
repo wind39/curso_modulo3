@@ -1,13 +1,13 @@
-﻿<Properties StartupItem="TesteTamanhoBloco/TesteTamanhoBloco.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TesteTamanhoBloco/Program.cs">
+﻿<Properties StartupConfiguration="{00F227BF-34CD-4F2C-AB55-C98C846A1B53}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Partidas/Program.cs">
     <Files>
-      <File FileName="TesteTamanhoBloco/Program.cs" Line="52" Column="13" />
-      <File FileName="Lista4Exercicio06/Program.cs" Line="61" Column="23" />
+      <File FileName="Partidas/Program.cs" Line="13" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Partidas PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

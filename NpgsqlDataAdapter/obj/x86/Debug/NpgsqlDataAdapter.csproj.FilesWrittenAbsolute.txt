@@ -1,6 +1,0 @@
-/home/william/Documents/Projects/curso_modulo3/NpgsqlDataAdapter/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/home/william/Documents/Projects/curso_modulo3/NpgsqlDataAdapter/bin/Debug/Npgsql.dll
-/home/william/Documents/Projects/curso_modulo3/NpgsqlDataAdapter/bin/Debug/NpgsqlDataAdapter.exe.mdb
-/home/william/Documents/Projects/curso_modulo3/NpgsqlDataAdapter/bin/Debug/NpgsqlDataAdapter.exe
-/home/william/Documents/Projects/curso_modulo3/NpgsqlDataAdapter/obj/x86/Debug/NpgsqlDataAdapter.exe
-/home/william/Documents/Projects/curso_modulo3/NpgsqlDataAdapter/obj/x86/Debug/NpgsqlDataAdapter.exe.mdb
